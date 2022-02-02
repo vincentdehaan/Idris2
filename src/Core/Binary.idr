@@ -196,6 +196,7 @@ writeTTCFile b file_in
            toBuf b (cgdirectives file)
            toBuf b (transforms file)
 
+export
 readTTCFile : TTC extra =>
               {auto c : Ref Ctxt Defs} ->
               Bool -> String -> Maybe (Namespace) ->
